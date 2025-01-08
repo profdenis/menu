@@ -1,0 +1,5 @@
+Choisissez une option :
+a. Option a
+b. Option b
+c. Option c
+d. Quitter
