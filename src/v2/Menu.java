@@ -1,4 +1,4 @@
-package submenu;
+package v2;
 
 import java.util.Scanner;
 
@@ -39,10 +39,12 @@ public class Menu {
                 System.out.println("Vous avez choisi l'option 1 !");
                 showSubMenu();
                 subOption = scanner.nextLine();
-                // ignore la valeur de retour parce que le sous-menu est exécuté une seule fois
+                // ignore la valeur de retour parce que le sous-menu est exécuté une seule fois, pas de boucle ici ; on
+                // pourrait utiliser la valeur de retour pour déterminer si une option valide a été sélectionnée ou non
                 handleSubMenuOption(subOption);
                 break;
             case "2":
+                // plusieurs lignes de code dans un seul bloc case, probablement mieux de les extraire dans une méthode
                 System.out.println("Vous avez choisi l'option 2 !");
                 boolean done = false;
                 while (!done) {
